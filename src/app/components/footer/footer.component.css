@@ -1,0 +1,57 @@
+
+.footer{
+    height: 35vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.699)),url('/assets/img/footer-background.webp');
+    border-top: 2px solid #333;
+}
+
+.ig-logo-container{
+    display: flex;
+    justify-content: center;
+}
+
+.legal{
+    display: flex;
+    justify-content: center;
+    color: #eee;
+    margin-top: 40px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-family: "Montserrat";
+
+}
+.footer-links{
+    font-family: "Montserrat";
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.footer-links a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #eee;
+    text-transform: uppercase;
+    transition: all 150ms ease-in-out;
+}
+
+.footer-links a:hover{
+    color: #ff2e2e;
+}
+.ig-icon{
+    margin-top: 60px;
+    width: 40px;
+    height: 40px;
+    background:transparent;
+    
+}
+
+.delimiter{
+    color: #eee;
+    font-size: 20px;
+}
+
+.mobile-link{
+    display: none;
+}

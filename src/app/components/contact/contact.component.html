@@ -1,0 +1,157 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Follow us on Instagram @og.creations.">
+    <title>Contact</title>
+</head>
+
+<!-- Hero section -->
+<section class="about-hero">
+    <div class="hero">
+        <div class="header-container">
+            <h1 class="contact-header">Contact Us</h1>
+
+        </div>
+    </div>
+</section>
+
+
+    <section class="contact-info">
+        <div class="info grid container grid--2--cols">
+                  
+                    <!-- Google maps  -->
+                    <div class="maprouter">
+                            <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.2418278178266!2d-79.53658958427481!3d43.747074754372896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b318bd577b7ab%3A0x5dad630fe17d299c!2sOG%20Creations%20Recording%20Studio!5e0!3m2!1sen!2sca!4v1638735827362!5m2!1sen!2sca"
+                            width="600" height="600" style="border:0;" loading="lazy" frameborder="3" style="border:0"></iframe>
+                    </div>
+                
+
+                <div class="contact-information">
+                    <h2 class="get-in-touch-header">Get in Touch.</h2>
+                    <p class="paragraph">
+                       <span class="contact-label">Address: </span> 
+                       <a class="contact-link" href="https://www.google.com/maps/dir//OG+Creations+North+York,+ON+M9M+2Z2,+Canada/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x882b318bd577b7ab:0x5dad630fe17d299c?sa=X&ved=2ahUKEwjn_LaYs5TvAhVPGs0KHaHWC6UQ9RcwFHoECCkQBQ"
+                       target="_blank" rel="noopener noreferrer">
+                           315 Deerhide Crescent, Unit 2, North York, ON</a> 
+                    </p>
+                    <p class="paragraph">
+                        <span class="contact-label">Phone: </span> 
+                        <a class="contact-link" id="phone" href="tel:+1-416-838-5463">416-838-5463</a>
+                    </p>
+                    <p class="paragraph">
+                        <span class="contact-label">Email: </span> 
+                        <a class="contact-link" id="email" href="mailTo:support@ogcreations.ca">support@ogcreations.ca</a>
+                        
+                    </p>
+                </div>
+                <div class="instagram">
+                    <h2 class="follow-us-header">Follow Us on Instagram</h2>   
+                    <div class="line">
+                        &nbsp;
+                    </div> 
+
+                    <a class="insta-handle" href="https://www.instagram.com/og.creations/" target="_blank">@og.creations</a>
+                </div>
+   
+        </div> 
+        
+        
+    </section>
+
+    <!-- ------------ -->
+    <!-- Form section -->
+    <!-- ------------ -->
+
+    <div class="ebook-section">
+        <div class="ebook-container" #formSection>
+            <div class="slant-2">
+                &nbsp;
+            </div>
+
+            <form [formGroup]="formGroup" class="contact-form">
+                <h1 class="ebook-title">Have a question? Reach out today.</h1>
+                <label for="name" class="input-text">Name*</label>
+                <input
+                required 
+                type="text" 
+                formControlName="name" 
+                class="input-field" 
+                aria-label="enter name"
+                [(ngModel)]="form.name"
+                >
+
+                <!-- name validation -->
+
+                <small 
+                *ngIf="formGroup.get('name').invalid && 
+                formGroup.get('name').touched" 
+                >Please enter name</small>
+
+                <label for="email" class="input-text">Email*</label>
+                <input 
+                required
+                type="email" 
+                formControlName="email" 
+                class="input-field"
+                aria-label="enter email"
+                [(ngModel)]="form.email"
+                >
+
+                <!-- email validation -->
+
+                <small 
+                *ngIf="formGroup.get('email').invalid 
+                && formGroup.get('email').touched">
+                Please enter a valid email address (ex: abc@abc.com)</small>
+                
+                
+
+                <label for="phone" class="input-text">Phone*</label>
+                <input
+                required 
+                type="phone" 
+                formControlName="phone" 
+                class="input-field" 
+                aria-label="enter email"
+                [(ngModel)]="form.phone"
+                >
+
+                <!-- phone validation -->
+
+                <small 
+                *ngIf="formGroup.get('phone').invalid && formGroup.get('phone').touched" 
+                >Please enter a valid phone number (10 digits)</small>
+                
+                <label for="notes" class="input-text">Notes*</label>
+                <textarea
+                type="text" 
+                name="notes" 
+                id="notes" 
+                cols="30" 
+                rows="10"
+                formControlName="message"
+                [(ngModel)]="form.message"
+                ></textarea>
+                
+                <div class="btn-container">
+                <button 
+                type="button" 
+                class="submit-button" 
+                aria-label="submit form" 
+                (click)="saveForm()"
+                routerLink="/thank-you" 
+                href="/thank-you" 
+                [disabled]="formGroup.invalid"
+                >Submit</button>
+
+                </div>
+
+            </form>
+
+
+        </div>
+
+
+    </div>

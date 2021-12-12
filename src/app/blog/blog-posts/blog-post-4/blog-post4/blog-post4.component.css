@@ -1,0 +1,37 @@
+.blog-post{
+    
+    background-color: #1C1C20;
+    /* margin-top: -20px; */
+    padding-top: 2.4rem;
+    padding-bottom: 4.6rem;
+}
+
+.blog-post-img{
+    width: 40%;
+    float: left;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 0;
+    margin-top: 50px;
+}
+
+.blog-post-title{
+    color: #eee;
+    font-size: 40px;
+}
+
+.blog-post-text{
+
+    color: #ddd;
+    line-height: 2;
+}
+
+.blog-subtitle{
+    text-decoration: underline;
+    line-height: 3;
+    color: #eee;
+}
+
+p{
+    margin-bottom: 3rem;
+}

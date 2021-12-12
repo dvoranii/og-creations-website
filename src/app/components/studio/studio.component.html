@@ -1,0 +1,86 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+    content="At OG Creations, we use only the best recording and music equipment to help our artists create their music. Our recording studio is equipped with high-end microphones, software, and other gear that allow us to efficiently and professionally provide our music production services.">
+    <title>About Us</title>
+</head>
+
+<body>
+
+    <section class="studio-hero">
+        <div class="hero">
+            <div class="header-container">
+                <h1 class="studio-header">The Studio</h1>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="equipment container">
+        <h2 class="equipment-title">Equipment</h2>
+        <p class="paragraph equipment-text">At OG Creations, we use only the best recording and music equipment to help our artists create their music.
+            Our recording studio is equipped with high-end microphones, software, and other gear that allow us to
+            efficiently and professionally provide our music production services.</p>
+
+            <div class="equipment-cards">
+
+            
+            <div class="equipment-card microphones">
+                <p class="equipment-card-title">Microphones</p>
+                <ul class="paragraph equipment-list">
+                    <li>1x Neumann U87</li>
+                    <li>1x Neumann TLM49</li>
+                    <li>1x AKG C214</li>
+                </ul>
+                
+            </div>
+            <div class="equipment-card gear">
+                <p class="equipment-card-title">Gear</p>
+                <ul class="paragraph equipment-list">
+                    <li>Avalon 737 Preamp</li>
+                    <li>Pro Tools HD System</li>
+                    <li>Yamaha NS10 (pair)</li>
+                    <li>Adam T5V (pair)</li>
+                    <li>Yamaha Subwoofer</li>
+                    <li>Yamaha O2R Recording Console</li>
+                </ul>
+                
+            </div>
+            <div class="equipment-card software">
+                <p class="equipment-card-title">Software</p>
+                <ul class="paragraph equipment-list" id="software-list">
+                    <li>Pro Tools</li>
+                    <li>FL Studio</li>
+                    <li>Autotune EVO & Autotune EFX</li>
+                    <li>Waves Plugin Suite</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="studio-gallery container-2">
+
+        
+        <p class="studio-gallery-title">Studio Gallery</p>
+        <div class="gallery">
+            <gallery 
+            [items]="images"
+            [dots]="true"
+            [dotsSize]=20
+            [gestures]="true"
+            [counter]="false"
+            [thumb]="true"
+            [thumbPosition]="'right'"
+            [slidingDirection]="'vertical'"
+            [autoPlay]="true"
+            [playerInterval]="4000"
+            
+            ></gallery>
+
+        </div>
+    </div>
+    </section>
+</body>

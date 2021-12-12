@@ -1,0 +1,99 @@
+/* @media(max-width: 56.25em){
+    
+    .btn-container {
+        display: block;
+        z-index: 100;
+    }
+
+    .main-nav{
+        
+        background-image:linear-gradient(to top, rgb(25, 26, 29) 0%,rgb(24, 27, 37) 100%);
+        position: absolute;
+        top:0;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+
+        transform: translateX(100%);
+
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s ease-in;
+        
+        visibility: hidden;
+        pointer-events: none;
+        opacity: 0;
+        z-index: 100;
+    }
+
+    .nav-open .main-nav{
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform:translateX(0);
+        box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.205);
+    }
+
+    .main-nav-list{
+        flex-direction: column;
+        margin-left: 40px;
+        margin-top: 100px;
+        align-items: flex-start;
+        gap: 6.4rem;
+            }
+
+    .dropdown-menu{
+        opacity: 1;
+        pointer-events: auto;
+        background:transparent;
+        box-shadow: none;
+        margin-top: 15px;
+        grid-gap: 0;
+        gap: 24px;
+    }
+
+    .after-dropdown{
+        margin-top: 12.4rem;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .btn-container{
+        margin-right: 8rem;
+    }
+
+    .logo{
+        margin-left: 2.4rem;
+    }
+
+    #recording{
+        margin-top: 7px;
+    }
+
+    #mixing{
+        margin-top: 7px;
+    }
+
+}
+
+@media(max-width:34em){
+   .main-nav-list > .main-nav-link{
+        font-size: 14px;
+    }
+
+    .link-btn{
+        font-size: 14px;
+    }
+
+    .dropdown-menu > .main-nav-link{
+        font-size: 12px;
+    }
+
+    .after-dropdown{
+        margin-top: 12rem;
+    }
+
+    
+} */

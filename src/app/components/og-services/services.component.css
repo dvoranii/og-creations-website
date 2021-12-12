@@ -1,0 +1,263 @@
+.hero{
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.699)), url("/assets/img/banner-img.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+.services-header{
+    position: absolute;
+    top: 32%;
+    font-size: 45px;
+    color:#eee;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Aron Grotesque Regular";
+    font-weight: 700;
+    letter-spacing: .1em;
+}
+
+.services-title{
+    font-size: 30px;
+    font-family: "Aron Grotesque Regular";
+    text-align: center;
+    font-weight: 700;
+    margin-top: 4.2rem;
+    letter-spacing: 2px;
+    color: #38014C;
+    margin-bottom: 2.4rem;
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: 1px;
+    background-color: rgb(170, 170, 170);
+    width: 90%;
+    margin-bottom: 4.2rem;
+}
+
+.services-text{
+    text-align: center;
+}
+
+
+.cta-3{
+    margin-top: 4.8rem;
+    min-width:150px;
+    min-height: 39px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 550;
+    padding: 12.5px;
+    border: 3px solid #ff2e2e;
+    color: #333;
+    transition: all 0.15s ease-in;
+    letter-spacing: 0.9px;
+    margin-left: 12.8rem;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2.4rem;
+    margin-bottom: 4.2rem;
+}
+
+.cta-3:hover{
+    cursor: pointer;
+    background-color:#ff312a;
+    color: #fff;
+}
+
+.services-details{
+    margin-top: 4.6rem;
+    display: flex;
+}
+
+.service-title{
+    font-size: 25px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: #D60012;
+    text-transform: uppercase;
+
+    
+}
+.recording-details,
+.mixing-details{
+    padding: 20px;
+
+}
+
+/* Services Cards */
+
+.service-cards-container{
+    column-gap: 2.4rem;
+}
+
+.card-title{
+    font-size: 20px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+    margin-top: 2.4rem;
+
+}
+.music-production,
+.recording,
+.mixing{
+    padding: 30px;
+    margin-bottom: 4.6rem;
+    margin-top: 4.6rem;
+}
+
+.card-img{
+    border-radius: 5px;
+}
+
+.card{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.267);
+    border-radius: 5px;
+}
+
+/* ********** */
+/* Contact Form */
+/* ********* */
+/* ebook section */
+
+.ebook-section{
+
+    background-color: #1C1B20;
+    background-image:url('/assets/img/black_bar_.webp');
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: top;
+
+}
+
+.ebook-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contact-form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    z-index: 300;
+    margin-top: 150px;
+    padding-bottom: 9.6rem;
+}
+
+.slant-2{
+    height: 7px;
+    width: 450px;
+    background:linear-gradient(to right, #535C9F, #FF4C44);
+    position: absolute;
+    top: 15%;
+
+}
+
+.ebook-title{
+    font-size: 35px;
+    color: #eee;
+    font-family: "Aron Grotesque Regular";
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.ebook-text{
+    color: #eee;
+    /* font-size: 20px; */
+    display: flex;
+    justify-content: center;
+    line-height: 1.5;
+}
+
+.cta-4{
+    grid-column: 1;
+    width: 200px;
+    min-width:150px;
+    min-height: 39px;
+    font-size: 18px;
+    font-weight: 550;
+    padding: 12.5px;
+    border: 3px solid #ff2e2e;
+    color: #eee;
+    margin-top: 3rem;
+    background: rgba(0, 0, 0, 0.144);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.384);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.219);
+    transition: all 150ms ease-in-out;
+}
+
+.cta-4:hover{
+    cursor: pointer;
+    background-color:#ff312a;
+    color: #fff;
+}
+
+.input-field{
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: none;
+}
+
+.input-field:focus{
+    outline: none;
+    box-shadow: 0px 0px 15px #ff312a77;
+}
+
+.btn-container{
+    align-self: center;
+}
+.submit-button{
+    height: 50px;
+    font-size: 20px;
+    width: 350px;
+    margin-top: 20px;
+    border: none;
+    font-weight: 600;
+    background: rgba(238, 238, 238, 0.089);
+    color: #eee;
+    align-items: center;
+    border: 3px solid #ff2e2e;
+    transition: all 150ms ease-in-out;
+    align-content: center;
+ 
+}
+
+.submit-button:hover{
+    background-color: rgb(222, 216, 241);
+    border: 3px solid rgb(222, 216, 241);
+    color: rgb(48, 48, 48);
+    cursor: pointer;
+}
+
+label{
+    color: #888;
+    font-size: 16px;
+    font-family: "Montserrat";
+}
+
+small{
+    font-family: "Montserrat";
+    font-size: 12px;
+    color:#ff2e2e ;
+}

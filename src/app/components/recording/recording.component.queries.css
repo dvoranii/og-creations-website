@@ -1,0 +1,291 @@
+@media(max-width:96em){
+
+
+}
+@media(max-width:78rem){
+    .high-quality-text{
+        margin-left: 4.2rem;
+        margin-top: 184px;
+    }
+
+}
+
+@media(max-width:86em){
+    .high-quality-text{
+        margin-top: 170px;
+        margin-left: 20px;
+    }
+}
+
+@media(max-width:72em){
+    .ebook-title{
+        text-align: center;
+    }
+
+
+    .ebook-text{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .high-quality-img-wrapper{
+        margin-top: 16rem;
+    }
+
+    .recording-intro-text{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .hero{
+        height: 60vh;
+    }
+
+    .contact-form{
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .about-recording-text{
+        margin-bottom: 0px;
+        padding-left: 4.6rem;
+        padding-right: 4.6rem;
+    }
+
+    .recording-title-description{
+        bottom:45%;
+    }
+
+
+}
+
+@media(max-width:64em){
+    .hero{
+        height: 70vh;
+    }
+
+
+}
+
+@media(max-width:56em){
+    .work-card-container{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .work-card{
+        width: 80%;
+    }
+
+    .img-container img{
+        width: 90%;
+        margin-top: 4.2rem;
+    }
+
+    .input-text{
+        text-align: center;
+    }
+
+
+}
+
+@media(max-width:52em){
+    .work-with-og{
+        grid-template-columns: 1fr;
+    }
+
+    .img-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-container img{
+        width: 70%;
+    }
+
+    .why-work-text{
+        display: flex;
+        align-items: center;
+    }
+
+    .why-work-title{
+        margin-bottom: 0px;
+    }
+
+
+    .high-quality-text{
+        grid-column: span 2;
+    }
+
+    .high-quality-img{
+        display: none;
+    }
+
+    .about-recording-text{
+        margin-bottom: 0px;
+    }
+
+    .input-field{
+        width: 90%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+
+
+}
+
+@media(max-width:48em){
+
+    .recording-title-description{
+        bottom: 48%;
+    }
+
+    .high-quality-paragraph{
+        padding-right: 4.6rem;
+    }
+
+
+}
+
+@media(max-width:38em){
+    .why-work-title{
+        font-size: 35px;
+    }
+
+    .why-work-title{
+        font-size: 30px;
+    }
+
+    .high-quality-title{
+        font-size: 25px;
+    }
+
+        .contact-form{
+        padding-bottom: 12.4rem;
+    }
+
+
+}
+
+@media(max-width:34em){
+    .recording-title-description{
+        bottom: 45%;
+    }
+    .recording-title-secondary{
+        font-size: 18px;
+    }
+    .high-quality-title{
+        text-align: center;
+        padding-right: 4.6rem;
+    }
+}
+
+@media(max-width:32em){
+
+    .slant-2{
+        margin-top: 0;
+        width: 350px;
+    }
+
+    .recording-header{
+        font-size: 30px;
+    }
+    .hero{
+        height: 50vh;
+    }
+
+
+    .why-work-title{
+        font-size: 25px;
+    }
+
+    .ebook-title{
+        font-size: 35px;
+    }
+
+
+}
+
+@media(max-width:26em){
+
+    .recording-title-description{
+        font-size: 14px;
+        bottom: 45%;
+    }
+
+    .why-work-title{
+        text-align: center;
+    }
+
+    .work-card-container{
+        grid-template-columns: 1fr;
+    }
+
+
+    .high-quality-title{
+        font-size: 20px;
+    }
+
+    .recording-intro-title{
+        font-size: 25px;
+    }
+
+    .submit-button{
+        width: 280px;
+    }
+
+
+}
+
+@media(max-width:23.5em){
+    .recording-header{
+        font-size: 25px;
+    }
+
+    .recording-title-description{
+        font-size: 12px;
+        bottom: 47%;
+
+    }
+
+    .slant-2{
+        width: 280px;
+        top: 9%;
+    }
+
+    .contact-form{
+        margin-top: 75px;
+    }
+
+    .ebook-title{
+        font-size:30px;
+        margin-bottom: 0px;
+    }
+
+
+
+}
+
+@media(max-width:20em){
+    .recording-title-description{
+        font-size: 10px;
+        bottom: 39%;
+
+    }
+
+    .high-quality-title{
+        padding: 0px;
+        text-align: left;
+    }
+
+    .high-quality-text{
+        margin-left: 2.4rem;
+    }
+
+    .header-container{
+        padding-top: 6.4rem;
+    }
+
+}

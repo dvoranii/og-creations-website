@@ -1,0 +1,217 @@
+header{
+    padding-top:20px;
+    padding-bottom:20px;
+    background-image: linear-gradient(to top, rgb(25, 26, 29) 0%,rgb(24, 27, 37) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.logo{
+    width: 145px;
+    height: auto;
+    cursor: pointer;
+    margin-left: 65px;
+
+}
+
+.main-nav-list{
+    list-style: none;
+    display: flex;
+    gap: 3.2rem;
+    padding-right: 50px;
+    align-items: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited{
+    
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    color: #eee;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all 150ms ease-in-out;
+    padding-bottom: 3px;
+
+}
+
+.main-nav-link:hover{
+    color: #FF204F;
+    cursor: pointer;
+    box-shadow: 0px 1.75px 0px #FE2020;
+}
+
+.main-nav-link:focus{
+    color: #FF204F;
+}
+
+/* Menu Button */
+
+.burger-icon,
+.close-icon{
+    margin-top: 3px;
+    color:#fff6e6;
+    font-size: 20px;
+}
+
+.burger-container:hover, .burger-icon:hover{
+    color: white;
+}
+
+.close-icon{
+    color: #eee;
+    margin-bottom: 20px;
+
+}
+
+.close{
+    display: none;
+}
+
+.display{
+    display: block;
+}
+
+.close-container:hover, .close-icon:hover{
+    color: rgb(218, 218, 218);
+}
+
+.menu-btn{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-top-right-radius:4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+    background-color: #CC9B41;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.274);
+    transition: all 0.1s ease-in;
+}
+
+.menu-btn:active{
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.274);
+}
+
+.btn-x{
+background-color: #333;
+}
+
+
+.btn-burger:hover{
+    background-color: #c0923b;
+    cursor: pointer;
+}
+.btn-x:hover{
+    cursor: pointer;
+    background-color: rgb(63, 63, 63);
+
+}
+
+.btn-container{
+    position: relative;
+    margin-right: 70px;
+    margin-bottom: 30px;
+    display: none;
+    transition: all 0.1s ease-in;
+}
+
+.btn-container:active{
+    transform: scale(0.98);
+}
+
+.icon-inner{
+    margin-top: 4px;
+}
+
+
+/* *************** */
+/* Dropdown Button */
+/* ************** */
+
+.link-btn{
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+    color: rgb(245, 245, 245);
+    font-weight: 500;
+    position: relative;
+    transition: all 150ms ease-in-out;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+#recording{
+    margin-top: 5px;
+}
+#mixing{
+    margin-top: -10px;
+}
+
+
+#recording:hover,
+#mixing:hover{
+    box-shadow: 0px 1.75px 0px transparent;
+}
+
+#services:hover{
+    box-shadow: 0px 1.75px 0px transparent;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    background: linear-gradient(to top, rgb(25, 26, 29) 0%,rgb(24, 27, 37) 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: .75rem;
+    width: 170px;
+    height: 70px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow:0px 2px 5px 0 rgba(0, 0, 0, 0.315);
+    opacity: 0;
+    transform: translateY(-5px);
+    pointer-events: none;
+    transition: all 150ms ease-in-out;
+    z-index:500;
+   
+
+}
+
+.dropdown:hover .dropdown-menu{
+    opacity: 1;
+    /* transform: translateY(0px); */
+    pointer-events: auto;
+}
+
+.dropdown-menu a{
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.line{
+    height: 1px;
+    background-color: rgb(46, 47, 51);
+    width: auto;
+    margin-top: -5px;
+    margin-bottom: 2px;
+}
+
+.triangle-down{
+    font-size: 10px;
+    padding-bottom: 5px;
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 10px;
+    pointer-events: none;
+}

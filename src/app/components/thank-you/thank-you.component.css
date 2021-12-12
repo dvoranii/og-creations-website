@@ -1,0 +1,55 @@
+.hero{
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.514)), url("/assets/img/thankyou.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+.thanks-header{
+    position: absolute;
+    top: 32%;
+    font-size: 50px;
+    color:#eee;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Aron Grotesque Regular";
+    font-weight: 700;
+    letter-spacing: .1em;
+
+}
+
+.thank-you-body{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgb(25, 26, 29) 0%,rgb(24, 27, 37) 100%);
+}
+
+.thank-you-text{
+    color: #eee;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+.thank-you-link:link,
+.thank-you-link:visited{
+    color: #ff2e2e;
+    text-decoration: none;
+    box-shadow: 0px 2px 0px transparent;
+    transition: all 150ms ease-in-out;
+}
+
+.thank-you-link:hover{
+    color: #FF204F;
+    box-shadow: 0px 2px 0px #ff2e2e;
+}

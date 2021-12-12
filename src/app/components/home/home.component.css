@@ -1,0 +1,668 @@
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* ***************** */
+/* Hero section */
+/* **************** */
+
+.hero-section{
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+    background-image: url('/assets/img/banner-img.webp');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: opacity 1s ease-in-out;
+}
+
+video{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+.hero-video{
+    height: 80%;
+    width: 100%;
+
+}
+
+.cta-hero{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    height: 47px;
+    width: 200px;
+    font-size: 20px;
+    font-family: "Aron Grotesque Regular";
+    font-weight: 600;
+    background-color: transparent;
+    border: 3px solid #FE2020;
+    color: #eee;
+    letter-spacing: 1.5px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.322);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.37);
+    /* outline: 1px solid rgba(0, 0, 0, 0.158); */
+    outline-offset: -4px;
+    transition: all 0.15s ease-out;
+}
+
+.cta-hero:hover{
+    cursor: pointer;
+    background-color: rgb(222, 216, 241);
+    color: rgb(43, 43, 43);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.164);
+    border: 3px solid rgb(222, 216, 241);
+    outline: none;
+
+}
+
+/* ***************** */
+/* Intro section */
+/* **************** */
+
+.intro{
+    height: 100px;
+}
+
+.slant{
+    background:linear-gradient(to right, #535C9F, #FF4C44);
+    height: 3px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 9.6rem auto;
+}
+
+.intro-container{
+   padding-top: 16px;
+}
+
+.header-welcome{
+    display: flex;
+    text-align: center;
+    font-size: 3.981rem;
+    margin-top: -50px;
+    justify-content: center;
+    letter-spacing: 4px;
+    font-family: "Aron Grotesque Regular";
+    font-weight: 700;
+    color: #38014C;
+    line-height: 1.5;
+
+}
+
+.intro-description{
+    text-align: center;
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+.paragraph-2{
+    padding-top: 16px;
+}
+
+.cta-2{
+    display: flex;
+    margin: 0 auto;
+    min-width:150px;
+    min-height: 39px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 550;
+    padding: 12.5px;
+    border: 3px solid #ff2e2e;
+    color: #333;
+    transition: all 0.15s ease-in;
+    letter-spacing: 0.9px;
+}
+
+.cta-2:hover{
+    cursor: pointer;
+    background-color:#ff312a;
+    color: #fff;
+}
+
+
+/* ***************** */
+/* Recording section */
+/* **************** */
+
+.recording{
+
+    margin-top: 19.2rem;
+    margin-bottom: 12.8rem;
+    gap: 9.2rem;
+}
+
+#mixing-section{
+    margin-bottom: 0;
+}
+
+#mixing-description{
+    padding-right: 8rem;
+}
+
+#mixing-img{
+    padding-left: 8rem;
+}
+
+#recording-img{
+    padding-right: 8rem;
+}
+.recording-img img{
+    width: 100%; 
+    object-fit: cover;
+    z-index: 1000;
+
+}
+
+.recording-description {
+    align-items: center;
+    padding-left: 8rem;
+
+}
+
+.recording-title{
+    font-family: "Aron Grotesque Regular";
+    font-weight: 700;
+    font-size: 3.318rem;
+    color: #38014C;
+    margin-bottom: 32px;
+}
+
+.recording-text{
+    
+    word-wrap: break-word;
+}
+
+.recording-icon{
+    max-width: 25px;
+    max-height: 25px;
+    background:linear-gradient(to bottom,rgb(248, 248, 248) 0%, rgb(228, 228, 228) 100%) ;
+    padding: 8px;
+    border-radius: 50%;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.055);
+    color: #222;
+    border: 3px solid #5f0081;
+}
+
+
+
+.recording-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 3.2rem;
+    gap: 3.4rem;
+    margin-left: 2.4rem;
+
+}
+
+.recording-list-item{
+    display: flex;
+    
+}
+
+.recording-list-item p {
+    margin: 0px;
+    padding-top: 7px;
+    font-weight: 500;
+    margin-left: 2.4rem;
+    margin-top: 12px;
+}
+
+.item-description{
+    color: #444;
+}
+
+.cta-3{
+    margin-top: 4.8rem;
+    min-width:150px;
+    min-height: 39px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 550;
+    padding: 12.5px;
+    border: 3px solid #ff2e2e;
+    color: #333;
+    transition: all 0.15s ease-in;
+    letter-spacing: 0.9px;
+    margin-left: 12.8rem;
+}
+
+.cta-3:hover{
+    cursor: pointer;
+    background-color:#ff312a;
+    color: #fff;
+}
+
+/* ********** */
+/* Menu Grid */
+/* ******** */
+
+.sections-grid{
+    height: 120vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    object-fit: cover;
+}
+
+.section-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+.section-title{
+    font-size: 30px;
+    font-family: "Aron Grotesque Regular";
+    color: #fff;
+    font-weight: 500;
+    z-index: 500;
+    pointer-events: none;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.726);
+ 
+}
+
+.studio-section{
+    position: relative;
+    overflow: hidden;
+}
+
+.studio-title{
+    position: absolute;
+    bottom: 50%;
+    left: 40%;
+}
+
+.studio-img{
+    transition: all 0.3s ease-in-out;
+    position:absolute;
+    bottom: -1px;
+    opacity: 90%;
+
+}
+
+.studio-img:hover{
+    transform: scale(1.2);
+    opacity: 70%;
+    
+}
+
+.services-section{
+    position: relative;
+    overflow: hidden;
+}
+
+.services-title{
+    position: absolute;
+    bottom: 50%;
+    left: 40%;
+}
+
+.services-img{
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    bottom: -1px;
+    opacity: 90%;
+    
+}
+
+.services-img:hover{
+    transform: scale(1.2);
+    opacity: 70%;
+    
+}
+
+.about-section{
+    position: relative;
+    overflow: hidden;
+}
+.about-title{
+    position: absolute;
+    bottom: 50%;
+    left: 40%;
+}
+
+.about-img{
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    opacity: 90%;
+}
+
+.about-img:hover{
+    transform: scale(1.2);
+    opacity: 70%;
+    
+}
+.artist-gallery-section{
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-title{
+    position: absolute;
+    bottom: 50%;
+    left: 40%;
+}
+
+.gallery-img{
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    opacity: 90%;
+}
+.gallery-img:hover{
+    transform: scale(1.2);
+    opacity: 70%;
+    
+}
+
+/* *************** */
+/* Instagram section */
+/* ************* */
+
+.instagram-section{
+    height: 100vh;
+    background-color: #1C1C20;
+    position: relative;
+}
+
+.instagram-title{
+    text-align: right;
+    padding: 9.6rem;
+}
+
+.instagram-title h1,
+.instagram-title h2{
+    letter-spacing: 2px;
+}
+
+.instagram-title h1{
+    font-size: 60px;
+    font-family: "Aron Grotesque Regular";
+    font-weight: 700;
+    color: #eee;
+    margin-bottom: 4.2rem;
+}
+
+.instagram-title h2 {
+    font-family: "Montserrat";
+    font-size: 35px;
+    color: #eee;
+}
+
+.instagram-section{
+    padding-bottom: 9.6rem;
+}
+
+.background-ig{
+    height: 90vh;
+}
+.instagram-img {
+    background-image: url('/assets/img/cover-copy1.png');
+    background-repeat: no-repeat;
+    background-position: 0 right;
+    background-size: cover;
+
+}
+
+.instagram-btn{
+    position: absolute;
+    top: 45%;
+
+}
+.instagram-btn:hover{
+    cursor: pointer;
+}
+
+.instagram-btn{
+    margin-bottom: 6rem;
+}
+
+.instagram-label{
+    position: absolute;
+    top: 35%;
+    font-family: "Aron Grotesque Regular";
+    font-size: 40px;
+    color: #eee;
+    margin-left: 2.4rem;
+    font-weight: 700;
+}
+
+
+
+/* next seciton */
+
+.mic-icon,
+.mix-icon,
+.coach-icon{
+    margin-top: 12px;
+    width: 40px;
+    height: 40px;
+}
+
+.revision-icon,
+.genre-icon{
+
+    margin-top: 12px;
+    width: 40px;
+    height: 40px;
+}
+
+.ready-section{
+position: relative;
+}
+
+.ready-background{
+    
+    height: 700px;
+    width: 1900px;
+    background:url('/assets/img/lowerimage_.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.ready-text{
+    position:absolute;
+    bottom: 20%;
+    padding-left: 40px;
+    
+    
+
+}
+
+.ready-title{
+    font-family: "Aron Grotesque Regular";
+    font-size: 40px;
+    color: #eee;
+    letter-spacing: 2px;
+    max-width: 100%;
+    font-weight: 600;
+    margin-bottom: 0;
+   
+}
+
+.ready-description{
+    font-family: "Montserrat";
+    color: #eee;
+    font-size: 18px;    
+    line-height: 2;
+    grid-column: 1;
+}
+
+
+.ebook-section{
+
+    background:linear-gradient(rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.699)),url('/assets/img/banner-img.webp');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
+}
+
+.ebook-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contact-form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    z-index: 300;
+    margin-top: 150px;
+    padding-bottom: 9.6rem;
+}
+
+.slant-2{
+    height: 7px;
+    width: 450px;
+    background:linear-gradient(to right, #535C9F, #FF4C44);
+    position: absolute;
+    top: 15%;
+
+}
+
+.ebook-title{
+    font-size: 40px;
+    color: #eee;
+    font-family: "Aron Grotesque Regular";
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.ebook-text{
+    font-family: "Montserrat";
+    color: #eee;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    line-height: 1.5;
+}
+
+.cta-4{
+    grid-column: 1;
+    width: 200px;
+    min-width:150px;
+    min-height: 39px;
+    font-size: 18px;
+    font-weight: 550;
+    padding: 12.5px;
+    border: 3px solid #ff2e2e;
+    color: #eee;
+    margin-top: 3rem;
+    background: rgba(0, 0, 0, 0.144);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.384);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.219);
+    transition: all 150ms ease-in-out;
+}
+
+.cta-4:hover{
+    cursor: pointer;
+    background-color:#ff312a;
+    color: #fff;
+}
+
+.input-field{
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: none;
+}
+
+.input-field:focus{
+    outline: none;
+    box-shadow: 0px 0px 15px #ff312a77;
+}
+
+.btn-container{
+    align-self: center;
+}
+.submit-button{
+    height: 50px;
+    font-size: 20px;
+    width: 350px;
+    margin-top: 20px;
+    border: none;
+    font-weight: 600;
+    background: rgba(238, 238, 238, 0.089);
+    color: #eee;
+    align-items: center;
+    border: 3px solid #ff2e2e;
+    transition: all 150ms ease-in-out;
+    align-content: center;
+ 
+}
+
+.submit-button:hover{
+    background-color: rgb(222, 216, 241);
+    border: 3px solid rgb(222, 216, 241);
+    color: rgb(48, 48, 48);
+    cursor: pointer;
+}
+
+label{
+    color: #888;
+    font-size: 16px;
+    font-family: "Montserrat";
+}
+
+small{
+    font-family: "Montserrat";
+    font-size: 12px;
+    color:#ff2e2e ;
+}
+
+/* ******************* */
+/* BROWSER ANIMATIONS */
+/* *******************/
+
+.recording.animate{
+    animation: anim1 1s cubic-bezier(0.14, 0.65, 0.62, 0.93);
+}
+
+.ebook-container.animate{
+    animation: anim2 .5s ease-in-out;
+}
+
+@keyframes anim1{
+    0%{
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+@keyframes anim2{
+    0%{
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}

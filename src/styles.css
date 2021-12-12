@@ -1,0 +1,105 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Colors::after
+
+red: #ff2e2e;, #FF204F;
+purple:#38014C, rgb(222, 216, 241)
+grey: #1C1C20
+*/
+@font-face {
+    font-family: "Aron Grotesque Regular";
+    src: local("Aron Grotesque Regular"),url(/assets/fonts/AronGrotesque-regular.ttf) format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),url(/assets/fonts/Montserrat-Medium.ttf) format("opentype");
+    font-display: swap;
+}
+
+::selection{
+    background-color: #ff2e2e;
+    color: #eee;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+@media(max-width:80em){
+    html,
+    .paragraph{
+        font-size: 56.25%;
+    }
+}
+
+@media(max-width:56em){
+    html,
+    .paragraph{
+        font-size: 50%;;
+    }
+}
+
+@media(max-width:37em){
+     html,
+     .paragraph{
+         font-size: 43.47%;
+     }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #eee;
+}
+ 
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.container-2{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+.grid {
+    display: grid;
+}
+
+.grid--2--cols {
+    grid-template-columns: 1fr 1fr;
+}
+.grid--3--cols {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid--4--cols {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.paragraph{
+    font-family: "Montserrat";
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+img{
+    width: 100%; 
+    object-fit: cover;
+}
+
+.heading-primary{
+    font-size: 3.981rem;
+}
+.heading-secondary{
+    font-size: 3.318rem;
+}

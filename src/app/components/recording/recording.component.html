@@ -1,0 +1,197 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" 
+    content="Having professional and high-quality recordings of your music is the best way to make an impression and get your music out into the world. Our team at OG Creations in Toronto offers recording services that can help you take your place in the music industry. We use the best technology, software, and equipment to provide the best possible recording services.">
+    <title>Recording</title>
+</head>
+
+<body>
+    <section class="recording-hero">
+        <div class="hero">
+
+            <div class="hero-content">
+
+                <div class="header-container">
+                    <h1 class="recording-header">Recording Services</h1>
+                    <p class="recording-title-description">Professional Music Production Services</p>
+                    <button href="/contact" routerLink="/contact" class="cta-3">Let's Get Started</button>
+                </div>
+                <h3 class="recording-title-secondary">RECORDING</h3>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="recording-intro container">
+        <div class="slant">
+        </div>
+
+        <h2 class="recording-intro-title">Get Your Music Out Into the World</h2>
+        <p class="paragraph recording-intro-text">Having professional and high-quality recordings of your music is the
+            best way to make an
+            impression and get your music out into the world. Our team at OG Creations in Toronto offers recording
+            services that can help you take your place in the music industry. We use the best technology, software, and
+            equipment to provide the best possible recording services. Our team is made up of music industry
+            professionals and will collaborate with you during your recording session to ensure we help you produce the
+            best version of your music possible. Whether you are a new or experienced artist, and no matter what genre
+            you fall into, we can help you record your music and prepare it for release.</p>
+    </section>
+
+    <section class="why-work-with-og">
+        <div class="work-with-og grid grid--2--cols">
+
+            <div class="img-container">
+                <img src="/assets/img/IMG-B.webp" alt="">
+            </div>
+            <div class="why-work-text paragraph">
+                <h2 class="why-work-title">Why Work With OG Creations</h2>
+                <ul>
+                    <li>High-end equipment and technology</li>
+                    <li>Professional recording services</li>
+                    <li>Variety of music production services</li>
+                    <li>Knowledgeable, experienced, and talented team</li>
+                    <li>Provide guidance and coaching during recording sessions</li>
+                    <li>Help new artists promote their music</li>
+                    <li>High-end equipment and technology</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="work-cards container-2">
+        <div class="work-card-container grid grid--4--cols">
+            <div class="work-card">
+                <img src="/assets/img/services-img/recording-img/IMG-ICON-1.webp" alt="">
+                <p class=" work-card-title">High-Quality Vocal & Instrumental Recording</p>
+            </div>
+            <div class="work-card">
+                <img src="/assets/img/services-img/recording-img/IMG-ICON-2.webp" alt="">
+                <p class="work-card-title">Demo Mix Of All Recorded Song</p>
+            </div>
+            <div class="work-card">
+                <img src="/assets/img/services-img/recording-img/IMG-ICON-3.webp" alt="">
+                <p class="work-card-title">Coaching & Guidance</p>
+            </div>
+            <div class="work-card">
+                <img src="/assets/img/services-img/recording-img/IMG-ICON-4.webp" alt="">
+                <p class="work-card-title">Professional Equipment & Software</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-recording container">
+        <div class="slant" id="slant-2">
+        </div>
+        <div class="about-recordig-wrapper">
+
+        
+
+        <h2 class="recording-intro-title">About Our Recording Services</h2>
+        <p class="paragraph about-recording-text">Recording your music is the only way to get your music out into the
+            world and choosing
+            professional recording services is the best way to help your music stand out and compete in the competitive
+            industry. At OG Creations, we offer high-quality and professional recording services to help ensure your
+            music
+            sounds flawless. Our team is knowledgeable, skilled, and experienced, allowing us to ensure your recorded
+            songs
+            meet and exceed your expectations. At the end of your recording session, you will get a demo mix of all your
+            recorded songs. Throughout your session, our team will give you guidance and coaching, ensuring that we make
+            the
+            most of your time in our studio.</p>
+        </div>
+    </section>
+
+    <section class="high-quality">
+        <div class="high-quality-wrapper grid grid--2--cols container-2">
+            <div class="high-quality-text">
+                <h2 class="high-quality-title">High-Quality Equipment And Software</h2>
+                <p class="paragraph high-quality-paragraph">
+                    Our studio is full of professional and high-quality recording equipment and software. With our
+                    high-end recording gear, we can ensure that you are getting the best sounds possible. We offer
+                    high-quality vocal and instrumental recordings, giving your music the best, clean sound. When you
+                    work with us, you will have access to the best equipment, software, and a team who will help you
+                    make the most of your recording session. When we are done, you will be able to record your music and
+                    get the best version of each song. Be sure to learn more about our studio to see what equipment we
+                    are stocked with.
+                </p>
+            </div>
+
+            <div class="high-quality-img-wrapper">
+                <img src="/assets/img/services-img/IMG-1.1.webp" alt="" class="high-quality-img">
+            </div>
+        </div>
+    </section>
+
+    <div class="ebook-section">
+        <div class="ebook-container container">
+            <div class="slant-2">
+                &nbsp;
+            </div>
+
+            <form [formGroup]="formGroup" class="contact-form">
+                <h1 class="ebook-title">RECORD YOUR MUSIC TODAY</h1>
+                <p class="paragraph ebook-text">
+                    Recording your music is the first step to taking your place in the music industry. Our experienced and
+                    knowledgeable team will provide you with advice and guidance to ensure you end with something great
+                    after each recording session. Get started working on your music goal and
+                    start recording with us today.
+                </p>
+                <label for="name" class="input-text">Name*</label>
+                <input 
+                type="text" 
+                name="name" 
+                class="input-field" 
+                aria-label="enter name"
+                [(ngModel)]="form.name"
+                >
+                
+                <!-- name validation -->
+
+                <small 
+                *ngIf="formGroup.get('name').invalid && 
+                formGroup.get('name').touched" 
+                >Please enter name</small>
+
+                <label for="email" class="input-text">Email*</label>
+                <input 
+                type="email"
+                name="email" 
+                class="input-field" 
+                aria-label="enter email"
+                [(ngModel)]="form.email"
+                >
+     
+                <!-- email validation -->
+
+                <small 
+                *ngIf="formGroup.get('email').invalid 
+                && formGroup.get('email').touched">
+                Please enter a valid email address (ex: abc@abc.com)</small>
+
+                <div class="btn-container">
+                    <button 
+                    type="button" 
+                    class="submit-button" 
+                    aria-label="submit form"
+                    (click)="saveForm()"
+                    routerLink="/thank-you" 
+                    href="/thank-you"
+                    [disabled]="formGroup.invalid"
+                    >Submit</button>
+
+                </div>
+
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+</body>

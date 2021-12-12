@@ -1,0 +1,48 @@
+body{
+    background-color: #333;
+}
+
+.hero{
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.699)), url("/assets/img/banner-img.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+.privacy-header{
+    position: absolute;
+    top: 32%;
+    font-size: 45px;
+    color:#eee;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Aron Grotesque Regular";
+    font-weight: 700;
+    letter-spacing: .1em;
+}
+
+.privacy-policy{
+    padding: 10px;
+}
+
+
+.privacy-heading{
+    font-size: 35px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: #ddd;
+
+}
+
+.paragraph{
+    color: #ddd;
+}

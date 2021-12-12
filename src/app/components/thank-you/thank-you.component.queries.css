@@ -1,0 +1,11 @@
+@media(max-width:39em){
+    .thank-you-body{
+        height: 40vh;
+    }
+
+    .thanks-header{
+        font-size: 40px;
+    }
+
+
+}

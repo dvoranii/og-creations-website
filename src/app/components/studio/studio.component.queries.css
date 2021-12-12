@@ -1,0 +1,94 @@
+@media(max-width:69em){
+    .hero{
+        height: 30vh;
+    }
+
+    .studio-header{
+        font-size: 40px;
+    }
+}
+
+@media(max-width:44em){
+    .equipment-card{
+        padding-right: 0px;
+    }
+}
+@media(max-width:38em){
+    .equipment-card{
+        padding-right: 0px;
+    }
+
+    .equipment-cards{
+        grid-gap: 0;
+    }
+
+    .equipment-card-title{
+        text-align: center;
+    }
+
+    .gallery-section{
+        padding-bottom: 12.8rem;
+    }
+}
+@media(max-width:32em){
+    .equipment-card-title{
+        text-align: left;
+    }
+    .equipment-card{
+        padding-right: 0px;
+    }
+
+    .equipment-cards{
+        grid-gap: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .microphones{
+        grid-row: 1;
+    }
+
+    .gear{
+        grid-row: 2;
+    }
+}
+
+@media(max-width:25em){
+
+    .hero{
+        height: 25vh;
+    }
+
+    .studio-header{
+        font-size: 40px;
+    }
+    
+    .equipment-list{
+        line-height: 2.5;
+    }
+    
+    .equipment-card{
+        padding-bottom: 0px;
+    }
+
+    .microphones{
+        padding-top: 0px;
+    }
+
+    .equipment-cards{
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .microphones{
+        margin-left: -70px;
+    }
+
+    .studio-gallery{
+        padding-bottom: 9.6rem;
+    }
+}

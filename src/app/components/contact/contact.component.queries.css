@@ -1,0 +1,133 @@
+@media(max-width:69em){
+    .hero{
+        height: 30vh;
+    }
+
+    .contact-header{
+        font-size: 40px;
+    }
+
+}
+
+@media(max-width:56em){
+    .info{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 0.5fr;
+    }
+
+    .maprouter{
+        grid-row: 2;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+   .maprouter iframe{
+        padding-left:0;
+    }
+    
+
+    .contact-information{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+
+
+}
+
+@media(max-width:48em){
+    .ebook-title{
+        font-size: 30px;
+    }
+
+    .slant-2{
+        width: 200px;
+        height: 4px;
+    }
+}
+
+@media(max-width:37em){
+
+    .get-in-touch-header{
+        font-size: 25px;
+    }
+
+    .follow-us-header{
+        font-size: 25px;
+    }
+
+    .ebook-title{
+        font-size: 25px;
+    }
+
+    .slant-2{
+        top: 7%;
+    }
+
+    .contact-form{
+        margin-top: 100px;
+        padding-bottom: 12.4rem;
+    }
+
+    .insta-handle{
+        font-size: 22px;
+    }
+
+    .contact-header{
+        font-size: 40px;
+    }
+
+
+
+
+}
+
+@media(max-width:31em){
+
+    .ebook-title{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .input-text{
+        font-size: 14px;
+    }
+
+    .submit-button{
+        width: 280px;
+    }
+
+    small{
+        text-align: center;
+    }
+}
+
+@media(max-width:25em){
+    .maprouter{
+        width: 90%;
+    }
+
+    .input-field{
+        height: 35px;
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .input-text{
+        text-align: center;
+    }
+
+    #notes{
+        min-width: 80%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .contact-information{
+        padding-left: 2.4rem;
+    }
+}

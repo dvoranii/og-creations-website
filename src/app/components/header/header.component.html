@@ -1,0 +1,67 @@
+<header [class]="headerBurgerVisible">
+    <div>
+       <a href="/" routerLink="/" name="header-logo"><img width="512" height="348" class="logo" src="/assets/img/Logo.webp" alt="OG Creations logo header"></a> 
+    </div>
+    
+    <nav class="main-nav">
+        <div class="main-nav-list">
+            <a class="main-nav-link" routerLink="/" href="/" name="home">Home</a>
+            
+            <a class="main-nav-link" routerLink="/about" href="/about" name="about">About</a>
+            <div class="dropdown-div">
+                <div class="dropdown" data-dropdown>
+                    <button
+                    data-dropdown-button 
+                    class="link-btn main-nav-link"  
+                    routerLink="/services"
+                    id="services"
+                    >
+                    Services <span class="triangle-down">▼</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="main-nav-link" routerLink="/recording" href="/recording" id="recording" name="recording">Recording</a>
+                    <div class="line">&nbsp;</div>
+                    <a class="main-nav-link" routerLink="/mixing" href="/mixing" id="mixing" name="mixing">Mixing & Mastering</a>
+
+                </div>
+
+                </div>
+            </div>
+            
+            
+            <!-- <a class="main-nav-link" routerLink="/testimonials">Testimonials</a> -->
+            <a class="main-nav-link after-dropdown" routerLink="/studio" href="/blog" name="og-blog">Studio</a>
+            <a class="main-nav-link" routerLink="/blog" href="/blog" name="og-blog">Blog</a>
+            <a class="main-nav-link" routerLink="/contact" href="/contact" name="contact">Contact</a>
+        </div>
+    </nav>
+
+        <div class="btn-container">
+            <div class="close-container" [class]="openX">
+                <button class="menu-btn btn-x" (click)="closeNav()" aria-label="close menu button">
+                    <span class="material-icons close-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon-inner" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                          </svg>
+                    </span>
+                </button>
+            </div>
+    
+            <div class="burger-container" [class]="closeMenu">
+                <button class="menu-btn btn-burger" (click)="openNav()" aria-label="open menu button">
+                    <span class="material-icons burger-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon-inner" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                          </svg>
+                    </span>
+                </button>
+    
+            </div>
+    
+    
+    
+        </div>
+        
+    
+
+</header>
