@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
 
-Environment variables have been removed to preserve privacy of Google Firebase API.
+This repo does not include the Google Firebase API environment variables.
 
 ## Development server
 
