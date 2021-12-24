@@ -1,7 +1,4 @@
-@media(max-width:96em){
 
-
-}
 @media(max-width:78rem){
     .high-quality-text{
         margin-left: 4.2rem;
@@ -12,7 +9,7 @@
 
 @media(max-width:86em){
     .high-quality-text{
-        margin-top: 170px;
+        margin-top: 200px;
         margin-left: 20px;
     }
 }
@@ -36,10 +33,6 @@
         padding-right: 3rem;
     }
 
-    .hero{
-        height: 60vh;
-    }
-
     .contact-form{
         display: flex;
         justify-content: center;
@@ -60,13 +53,8 @@
 
 }
 
-@media(max-width:64em){
-    .hero{
-        height: 70vh;
-    }
 
 
-}
 
 @media(max-width:56em){
     .work-card-container{
@@ -76,6 +64,9 @@
 
     .work-card{
         width: 80%;
+        padding: 0;
+        padding-left: 35px;
+
     }
 
     .img-container img{
@@ -85,6 +76,13 @@
 
     .input-text{
         text-align: center;
+    }
+    .hero{
+        background-attachment: local;
+    }
+
+    .ebook-section{
+        background-attachment: local;
     }
 
 
@@ -163,7 +161,7 @@
     }
 
         .contact-form{
-        padding-bottom: 12.4rem;
+        padding-bottom: 16.4rem;
     }
 
 
@@ -192,10 +190,6 @@
     .recording-header{
         font-size: 30px;
     }
-    .hero{
-        height: 50vh;
-    }
-
 
     .why-work-title{
         font-size: 25px;
@@ -252,7 +246,7 @@
 
     .slant-2{
         width: 280px;
-        top: 9%;
+        top: 6%;
     }
 
     .contact-form{
@@ -282,10 +276,6 @@
 
     .high-quality-text{
         margin-left: 2.4rem;
-    }
-
-    .header-container{
-        padding-top: 6.4rem;
     }
 
 }

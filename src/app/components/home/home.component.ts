@@ -3,6 +3,7 @@ import { Form } from 'src/app/models/form.model';
 import { FormSubmitService } from 'src/app/services/form-submit.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { EmailService } from 'src/app/services/email.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -25,7 +26,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
   form: Form = new Form();
   submitted = false;
 
-  constructor(private formSubmitService: FormSubmitService, private emailService: EmailService) { }
+  constructor(
+    private formSubmitService: FormSubmitService, 
+    private emailService: EmailService,
+    private router: Router
+    ) { }
 
   ngOnInit(): void {
 
@@ -36,6 +41,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
       'email': new FormControl(null, [Validators.required, Validators.email])
       
     });
+
+    this.router.routeReuseStrategy.shouldReuseRoute = () => {
+      return false;
+    };
+
   }
 
   ngAfterViewInit(): void {
@@ -57,8 +67,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   onEmailSubmit(){
     this.emailService.submitEmail(this.form).subscribe({
-      next:(data)=> console.log('success', data),
-      error: error=>console.log('fail',error)
+      next:(data)=> (data),
+      error: error=>(error)
     })
   }
 
@@ -82,8 +92,5 @@ export class HomeComponent implements OnInit, AfterViewInit {
       })
     }, options)
   }
-
-
-
 
 }

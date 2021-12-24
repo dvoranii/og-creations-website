@@ -265,7 +265,8 @@ label{
 small{
     font-family: "Montserrat";
     font-size: 12px;
-    color:#ff2e2e ;
+    color:#ff2e2e;
+    text-shadow: 0px 0px 15px rgba(255, 0, 0, 0.616);
 }
 
 /* ******************* */

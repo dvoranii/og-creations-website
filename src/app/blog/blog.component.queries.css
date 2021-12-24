@@ -1,7 +1,4 @@
 @media(max-width:69em){
-    .hero{
-        height: 30vh;
-    }
 
     .blog-header{
         font-size: 40px;
@@ -10,9 +7,7 @@
 
 @media(max-width:50em){
 
-    .hero{
-        height: 25vh;
-    }
+
     .blog-posts{
         grid-template-columns: 1fr;
     }
@@ -36,7 +31,11 @@
     }
 
     .blog{
-        padding-bottom: 9.6rem;
+        padding-bottom: 13.6rem;
+    }
+
+    .hero{
+        background-attachment: local;
     }
 }
 

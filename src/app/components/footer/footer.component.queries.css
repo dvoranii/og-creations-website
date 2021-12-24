@@ -2,7 +2,7 @@
 
     .footer{
         background: #333;
-        height: 10vh;
+        height: 14vh;
         position: fixed; 
         bottom: 0;
         width: 100%;
@@ -32,7 +32,7 @@
     }
 
     .ig-logo-container{
-        padding-top: 10px;
+        padding-top: 20px;
         padding-bottom: 21px;
         margin-left: 40px;
         margin-right: 40px;
@@ -53,11 +53,6 @@
 }
 
 @media(max-width:23em){
-
-    .ig-logo-container{
-        padding-top: 8px;
-    }
-
     .mobile-link{
         font-size: 10px;
 

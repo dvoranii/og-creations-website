@@ -16,12 +16,10 @@
     <!-- HERO SECTION -->
     <div class="hero-section">
         <div class="video-container">
-            <video class="hero-video"
-                src="https://og-creations-website.s3.ca-central-1.amazonaws.com/OG+Creations+Recording+Studio.mp4"
-                autoplay loop>
+            <video autoplay="autoplay" [muted]="true" preload="auto" class="hero-video"
+                src="/assets/OG Creations Recording Studio.mp4"
+                 playsinline loop>
             </video>
-
-            
         </div>
         <a href="/contact" routerLink="/contact"><button class="cta-hero">Get Started</button></a>
     </div>

@@ -23,8 +23,9 @@ grey: #1C1C20
     color: #eee;
 }
 
-html{
+html, body{
     font-size: 62.5%;
+    position: relative;
     overflow-x: hidden;
 }
 
@@ -35,19 +36,6 @@ html{
     }
 }
 
-@media(max-width:56em){
-    html,
-    .paragraph{
-        font-size: 50%;;
-    }
-}
-
-@media(max-width:37em){
-     html,
-     .paragraph{
-         font-size: 43.47%;
-     }
-}
 
 body {
     margin: 0;

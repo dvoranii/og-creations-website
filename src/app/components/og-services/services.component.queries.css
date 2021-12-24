@@ -38,10 +38,6 @@
         text-align: center;
     }
 
-    .hero{
-        height: 25vh;
-    }
-
     .services-header{
         top: 20%;
     }
@@ -81,6 +77,10 @@
     .contact-form{
         margin-top: 75px;
     }
+
+    .hero{
+        background-attachment: local;
+    }
 }
 
 @media(max-width:37em){
@@ -103,6 +103,10 @@
 
     .contact-form{
         padding-bottom: 12.4rem;
+    }
+
+    .ebook-section{
+        padding-bottom: 8rem;
     }
     
 }

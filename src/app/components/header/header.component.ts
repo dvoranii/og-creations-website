@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -14,7 +15,7 @@ export class HeaderComponent implements OnInit {
   closeMenu: string | any;
   openX: string | any;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -30,6 +31,10 @@ export class HeaderComponent implements OnInit {
     this.headerBurgerVisible = "";
     this.closeMenu = "display";
     this.openX = "close";
+  }
+
+  onReloadRoute(url:string){
+    this.router.navigateByUrl(url);
   }
 
 

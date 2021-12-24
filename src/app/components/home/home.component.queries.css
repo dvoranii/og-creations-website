@@ -126,6 +126,13 @@
     .about-title{
         left: 35%;
     }
+
+    .ebook-section{
+        background-attachment: local;
+    }
+    .hero{
+        background-attachment: local;
+    }
  }
 
  @media(max-width:45em){
@@ -235,6 +242,10 @@
     .ebook-title{
         padding: 2px;
         margin-bottom: 0px;
+    }
+
+    .ebook-section{
+        padding-bottom: 8rem;
     }
 
  }

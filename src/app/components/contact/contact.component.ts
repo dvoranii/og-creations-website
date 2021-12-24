@@ -4,6 +4,7 @@ import { FormSubmitService } from 'src/app/services/form-submit.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { EmailService } from 'src/app/services/email.service';
 import {Title} from "@angular/platform-browser";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -21,7 +22,12 @@ export class ContactComponent implements OnInit, AfterViewInit {
   @ViewChild('formSection', {read: ElementRef}) formSection: ElementRef | any;
   observer:any;
 
-  constructor(private formSubmitService: FormSubmitService, private emailService: EmailService, private titleService:Title) {
+  constructor(
+    private formSubmitService: FormSubmitService, 
+    private emailService: EmailService, 
+    private titleService:Title
+    
+    ) {
     this.titleService.setTitle("OG Creations ® - Contact")
    }
 
@@ -34,6 +40,7 @@ export class ContactComponent implements OnInit, AfterViewInit {
       "phone": new FormControl(null,[Validators.required, Validators.pattern("\\(?\\d{3}\\)?.?\\d{3}.?\\d{4}")])
       
     });
+
   }
 
   ngAfterViewInit(): void {

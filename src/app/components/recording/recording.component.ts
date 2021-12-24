@@ -4,6 +4,7 @@ import { FormSubmitService } from 'src/app/services/form-submit.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { EmailService } from 'src/app/services/email.service';
 import {Title} from "@angular/platform-browser";
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -20,7 +21,12 @@ export class RecordingComponent implements OnInit {
   form: Form = new Form();
   submitted = false;
 
-  constructor(private formSubmitService: FormSubmitService,private emailService: EmailService, private titleService:Title) {
+  constructor(
+    private formSubmitService: FormSubmitService,
+    private emailService: EmailService, 
+    private titleService:Title,
+    private router:Router
+    ) {
 
     this.titleService.setTitle("OG Creations ® - Recording")
    }
@@ -31,6 +37,10 @@ export class RecordingComponent implements OnInit {
       'email': new FormControl(null, [Validators.required, Validators.email])
       
     });
+
+    this.router.routeReuseStrategy.shouldReuseRoute = () => {
+      return false;
+    };
   }
 
   

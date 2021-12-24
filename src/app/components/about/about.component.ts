@@ -4,6 +4,7 @@ import { FormSubmitService } from 'src/app/services/form-submit.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { EmailService } from 'src/app/services/email.service';
 import {Title} from "@angular/platform-browser";
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -21,7 +22,13 @@ export class AboutComponent implements OnInit {
   form: Form = new Form();
   submitted = false;
 
-  constructor(private formSubmitService: FormSubmitService, private emailService: EmailService, private titleService:Title) {
+  constructor(
+    private formSubmitService: FormSubmitService, 
+    private emailService: EmailService, 
+    private titleService:Title,
+    private router:Router
+    
+    ) {
     
     this.titleService.setTitle("OG Creations ® - About Us")
   }
@@ -31,6 +38,10 @@ export class AboutComponent implements OnInit {
       'name':  new FormControl(null, Validators.required),
       'email': new FormControl(null, [Validators.required, Validators.email])
     });
+
+    this.router.routeReuseStrategy.shouldReuseRoute = () => {
+      return false;
+    };
   }
   
   saveForm(): void {

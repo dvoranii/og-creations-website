@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { GalleryItem, ImageItem } from 'ng-gallery';
 
 @Component({
@@ -31,6 +32,7 @@ export class StudioComponent implements OnInit {
       
 
     ]
+
   }
 
 

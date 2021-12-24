@@ -5,9 +5,9 @@
     
     <nav class="main-nav">
         <div class="main-nav-list">
-            <a class="main-nav-link" routerLink="/" href="/" name="home">Home</a>
+            <a class="main-nav-link" routerLink="/" href="/" name="home" (click)="onReloadRoute('/')">Home</a>
             
-            <a class="main-nav-link" routerLink="/about" href="/about" name="about">About</a>
+            <a class="main-nav-link" routerLink="/about" href="/about" name="about" (click)="onReloadRoute('/about')">About</a>
             <div class="dropdown-div">
                 <div class="dropdown" data-dropdown>
                     <button
@@ -15,13 +15,14 @@
                     class="link-btn main-nav-link"  
                     routerLink="/services"
                     id="services"
+                    
                     >
-                    Services <span class="triangle-down">▼</span>
+                    Services ▼
                 </button>
                 <div class="dropdown-menu">
-                    <a class="main-nav-link" routerLink="/recording" href="/recording" id="recording" name="recording">Recording</a>
+                    <a class="main-nav-link" routerLink="/recording" href="/recording" id="recording" name="recording" (click)="onReloadRoute('/recording')">Recording</a>
                     <div class="line">&nbsp;</div>
-                    <a class="main-nav-link" routerLink="/mixing" href="/mixing" id="mixing" name="mixing">Mixing & Mastering</a>
+                    <a class="main-nav-link" routerLink="/mixing" href="/mixing" id="mixing" name="mixing" (click)="onReloadRoute('/mixing')">Mixing & Mastering</a>
 
                 </div>
 
@@ -40,9 +41,10 @@
             <div class="close-container" [class]="openX">
                 <button class="menu-btn btn-x" (click)="closeNav()" aria-label="close menu button">
                     <span class="material-icons close-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon-inner" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                          </svg>
+                          <div class="x-icon">
+                              <div class="line-close line-1">&nbsp;</div>
+                              <div class="line-close line-2"></div>
+                          </div>
                     </span>
                 </button>
             </div>
@@ -50,9 +52,12 @@
             <div class="burger-container" [class]="closeMenu">
                 <button class="menu-btn btn-burger" (click)="openNav()" aria-label="open menu button">
                     <span class="material-icons burger-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon-inner" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                          </svg>
+
+                          <div class="hamburger">
+                              <div class="line-burger">&nbsp;</div>                              
+                              <div class="line-burger">&nbsp;</div>                              
+                              <div class="line-burger">&nbsp;</div>                              
+                          </div>
                     </span>
                 </button>
     
