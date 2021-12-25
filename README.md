@@ -1,6 +1,6 @@
 # OG Creations Recording Studio Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+A 14 page mobile responsive website including browser animations, testimonial carousel, image gallery, and validated contact forms. Form submissions are submitted as JSON objects and stored using Google Firebase Realtime Database (NoSQL). The owners are alerted of form submissions through HTTP POST requests sent to an activated Formspree form URL.
 
 This repo does not include the Google Firebase API environment variables.
 
