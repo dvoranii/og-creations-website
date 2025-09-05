@@ -1,143 +1,161 @@
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" 
-    content="OG Creations is a Toronto-based recording studio that opened its doors in March of 2019. We offer a variety of recording, music production, and mixing and mastering services to meet the needs of new and upcoming artists across the Greater Toronto Area.">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="OG Creations is a Toronto-based recording studio that opened its doors in March of 2019. We offer a variety of recording, music production, and mixing and mastering services to meet the needs of new and upcoming artists across the Greater Toronto Area."
+  />
 
-    <title>About Us</title>
+  <title>About Us</title>
 </head>
 
 <body>
-    <section class="about-hero">
-        <div class="hero">
-            <div class="header-container">
-                <h1 class="about-header">About</h1>
+  <section class="about-hero">
+    <div class="hero">
+      <div class="header-container">
+        <h1 class="about-header">About</h1>
+      </div>
+    </div>
+  </section>
 
-            </div>
-        </div>
-    </section>
-
-    <section class="about-description grid grid--2--cols container-2">
-        <div class="about-text">
-            <h2 class="heading-about">About Us</h2>
-            <p class="paragraph">OG Creations is a Toronto-based recording studio that opened its doors in March of
-                2019. We offer a variety of
-                recording, music production, and mixing and mastering services to meet the needs of new and upcoming
-                artists
-                across the Greater Toronto Area. Our team is experienced, knowledgeable, and talented when it comes to
-                music
-                production and we can help you get your music out into the world.
-
-                Our goal at OG Creations is to help new, upcoming artists, or experienced recording artists create a
-                name for
-                themselves in the music industry. We
-                work hard to help promote our clients so that they can continue to get more recognition for their
-                talents.
-                Learn more about our <a href="/services" routerLink="/services" class="service-link">services</a> and <a
-                    href="/contact" routerLink="/contact" class="service-link"> contact</a> us to get started!</p>
-        </div>
-
-        <div class="about-img-container">
-            <img class="about-img" src="/assets/img/SIDE_IMAGE_compressed.webp" alt="og creations about us image">
-        </div>
-
-    </section>
-
-    <!-- carousel  -->
-    <section class="testimonials">
-
-        <div class="testimonials-carousel">
-            <h2 class="heading-testimonials">Testimonials</h2>
-
-            <carousel 
-            class="carousel" 
-            [cellsToShow]="1" 
-            [arrowsOutside]="true" 
-            [height]="300" 
-            [dots]="true" 
-            [transitionDuration]="400"
-            >
-                <div class="carousel-cell">
-                    <div class="testimonial-container">
-                        <img id="stars-img" src="/assets/img/stars 1.webp" alt="">
-                        <h2 class="testimonial-title">Quality Music</h2>
-                        <p class="testimonial-text">“Solid studio with great producers and equipment that take the time
-                            to understand you as an artist to create the work you want”</p>
-                    </div>
-                </div>
-                <div class="carousel-cell">
-                    <div class="testimonial-container">
-                        <img id="stars-img" src="/assets/img/stars 1.webp" alt="">
-                        <h2 class="testimonial-title">Great Producers</h2>
-                        <p class="testimonial-text">“Extremely professional studio with a great setup. The producers are
-                            highly skilled and very cooperative.”</p>
-                    </div>
-                </div>
-                <div class="carousel-cell">
-                    <div class="testimonial-container">
-                        <img id="stars-img" src="/assets/img/stars 1.webp" alt="">
-                        <h2 class="testimonial-title">Great Studio</h2>
-                        <p class="testimonial-text">“Great studio with great staff. I went to it one time and they
-                            impressed me so I just finished a whole album with them”</p>
-                    </div>
-                </div>
-
-            </carousel>
-
-        </div>
-
-    </section>
-
-    <div class="ebook-section">
-        <div class="ebook-container">
-            <div class="slant-2">
-                &nbsp;
-            </div>
-
-            <form [formGroup]="formGroup" class="contact-form">
-                <h1 class="ebook-title">FREE EBOOK - GET YOURS TODAY</h1>
-                <p class="paragraph ebook-text">Enter your email for immediate access to our OG Creations Artist
-                    Resources eBook
-                </p>
-                <label for="name" class="input-text">Name*</label>
-                <input type="text" name="name" class="input-field" aria-label="enter name" [(ngModel)]="form.name">
-
-                <!-- name validation -->
-
-                <small *ngIf="formGroup.get('name').invalid && 
-                formGroup.get('name').touched">Please enter name</small>
-
-
-
-                <label for="email" class="input-text">Email*</label>
-                <input type="email" name="email" class="input-field" aria-label="enter email" [(ngModel)]="form.email">
-
-                <!-- email validation -->
-
-                <small *ngIf="formGroup.get('email').invalid 
-                && formGroup.get('email').touched">
-                    Please enter a valid email address (ex: abc@abc.com)</small>
-
-                <div class="btn-container">
-                    <button 
-                    type="button" 
-                    class="submit-button" 
-                    aria-label="submit form" 
-                    (click)="saveForm()"
-                    routerLink="/thank-you" 
-                    href="/thank-you"
-                    [disabled]="formGroup.invalid"
-                    >Submit</button>
-
-                </div>
-
-            </form>
-
-
-        </div>
-
-
+  <section class="about-description grid grid--2--cols container-2">
+    <div class="about-text">
+      <h2 class="heading-about">About Us</h2>
+      <p class="paragraph">
+        OG Creations is a Toronto-based recording studio that opened its doors
+        in March of 2019. We offer a variety of recording, music production, and
+        mixing and mastering services to meet the needs of new and upcoming
+        artists across the Greater Toronto Area. Our team is experienced,
+        knowledgeable, and talented when it comes to music production and we can
+        help you get your music out into the world. Our goal at OG Creations is
+        to help new, upcoming artists, or experienced recording artists create a
+        name for themselves in the music industry. We work hard to help promote
+        our clients so that they can continue to get more recognition for their
+        talents. Learn more about our
+        <a href="/services" routerLink="/services" class="service-link"
+          >services</a
+        >
+        and
+        <a href="/contact" routerLink="/contact" class="service-link">
+          contact</a
+        >
+        us to get started!
+      </p>
     </div>
 
+    <div class="about-img-container">
+      <img
+        class="about-img"
+        src="/assets/img/SIDE_IMAGE_compressed.webp"
+        alt="og creations about us image"
+      />
+    </div>
+  </section>
+
+  <!-- carousel  -->
+  <section class="testimonials">
+    <div class="testimonials-carousel">
+      <h2 class="heading-testimonials">Testimonials</h2>
+
+      <carousel
+        class="carousel"
+        [cellsToShow]="1"
+        [arrowsOutside]="true"
+        [height]="300"
+        [dots]="true"
+        [transitionDuration]="400"
+      >
+        <div class="carousel-cell">
+          <div class="testimonial-container">
+            <img id="stars-img" src="/assets/img/stars 1.webp" alt="" />
+            <h2 class="testimonial-title">Quality Music</h2>
+            <p class="testimonial-text">
+              “Solid studio with great producers and equipment that take the
+              time to understand you as an artist to create the work you want”
+            </p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="testimonial-container">
+            <img id="stars-img" src="/assets/img/stars 1.webp" alt="" />
+            <h2 class="testimonial-title">Great Producers</h2>
+            <p class="testimonial-text">
+              “Extremely professional studio with a great setup. The producers
+              are highly skilled and very cooperative.”
+            </p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="testimonial-container">
+            <img id="stars-img" src="/assets/img/stars 1.webp" alt="" />
+            <h2 class="testimonial-title">Great Studio</h2>
+            <p class="testimonial-text">
+              “Great studio with great staff. I went to it one time and they
+              impressed me so I just finished a whole album with them”
+            </p>
+          </div>
+        </div>
+      </carousel>
+    </div>
+  </section>
+
+  <div class="ebook-section">
+    <div class="ebook-container">
+      <div class="slant-2">&nbsp;</div>
+
+      <form [formGroup]="formGroup" class="contact-form">
+        <h1 class="ebook-title">FREE EBOOK - GET YOURS TODAY</h1>
+        <p class="paragraph ebook-text">
+          Enter your email for immediate access to our OG Creations Artist
+          Resources eBook
+        </p>
+        <label for="name" class="input-text">Name*</label>
+        <input
+          type="text"
+          name="name"
+          class="input-field"
+          aria-label="enter name"
+        />
+
+        <!-- name validation -->
+
+        <small
+          *ngIf="formGroup.get('name').invalid && formGroup.get('name').touched"
+          >Please enter name</small
+        >
+
+        <label for="email" class="input-text">Email*</label>
+        <input
+          type="email"
+          name="email"
+          class="input-field"
+          aria-label="enter email"
+        />
+
+        <!-- email validation -->
+
+        <small
+          *ngIf="
+            formGroup.get('email').invalid && formGroup.get('email').touched
+          "
+        >
+          Please enter a valid email address (ex: abc@abc.com)</small
+        >
+
+        <div class="btn-container">
+          <button
+            type="button"
+            class="submit-button"
+            aria-label="submit form"
+            routerLink="/thank-you"
+            href="/thank-you"
+            [disabled]="formGroup.invalid"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
 </body>

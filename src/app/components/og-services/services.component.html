@@ -1,153 +1,182 @@
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" 
-    content="At OG Creations in Toronto, we offer a variety of recording studio services for new and experienced artists. Our team is knowledgeable and experienced in producing music, allowing us to help turn your vision into reality and create music that defines you. ">
-    <title>Services</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="At OG Creations in Toronto, we offer a variety of recording studio services for new and experienced artists. Our team is knowledgeable and experienced in producing music, allowing us to help turn your vision into reality and create music that defines you. "
+  />
+  <title>Services</title>
 </head>
 
 <body>
-    <section class="services-hero">
-        <div class="hero">
-            <div class="header-container">
-                <h1 class="services-header">Services</h1>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="services container">
-        <h2 class="services-title">Your Success is our #1 Priority</h2>
-        <p class="paragraph services-text">At OG Creations in Toronto, we offer a variety of recording studio services
-            for new and
-            experienced artists. Our team is knowledgeable and experienced in producing music, allowing us to help turn
-            your vision into reality and create music that defines you. From recording to mixing and mastering to
-            promoting your music, we can help you get started in the music industry. Learn more about our recording
-            studio services and contact us to get started!</p>
-
-        <button routerLink="/contact" href="/contact" class="cta-3">Get in Touch</button>
-
-        <div class="line">
-            <p>&nbsp;</p>
-        </div>
-        <div class="services-details">
-
-            <div class="recording-details">
-                <h3 class="service-title recording-title">Recording</h3>
-                <p class="paragraph">Our studio is well equipped with high-quality microphones, gear, software, and
-                    other equipment to
-                    make our recording services the best possible. We work with artists of all styles and genres, new
-                    artists and experienced artists, help you record the music you want to put out into the world. When
-                    you record at OG Creations, you can expect:</p>
-                <ul class="paragraph">
-                    <li>High-quality vocal and instrumental recording</li>
-                    <li>Demo mix of all recorded songs at the end of each session</li>
-                    <li>Coaching and guidance by experienced professionals</li>
-                </ul>
-            </div>
-            <div class="mixing-details">
-                <h3 class=" service-title recording-title">Mixing & Mastering</h3>
-                <p class="paragraph">Our mixing and mastering engineers can help create the sound you are looking for,
-                    getting your song
-                    to the level you want. Our professional mixing and mastering services ensure that your music sounds
-                    even better than you imagined it. This process includes unlimited revisions to ensure that you are
-                    happy with the final product. We also know how to work with different genres and that your music
-                    needs to have its own unique sound, which is why we take a genre-appropriate approach when creating
-                    the perfect sound.</p>
-            </div>
-        </div>
-
-        <div class="service-cards container">
-            <div class="service-cards-container grid grid--3--cols">
-                <div class="card music-production">
-                    <img class="card-img" src="/assets/img/services-img/music-production.webp" alt="">
-                    <h3 class="card-title">Music production</h3>
-                    <p class="paragraph">Our Toronto-based producers provide us with a huge library of instrumentals to choose from. Can’t
-                        find any that you like? Does your music demand totally unique production? No problem, we can
-                        make the music from scratch to fit your vocals perfectly.</p>
-                </div>
-                <div class="card recording">
-                    <img class="card-img" src="/assets/img/services-img/recording.webp" alt="">
-                    <h3 class="card-title">Recording</h3>
-                    <p class="paragraph">Record your song in a state-of-the-art studio, with highly-trained audio engineers guiding you
-                        along the way. Our recording sessions are focused, collaborative, and fun to make sure that you
-                        get the most out of your studio experience.</p>
-                </div>
-                <div class="card mixing">
-                    <img class="card-img" src="/assets/img/services-img/mixing.webp" alt="">
-                    <h3 class="card-title">Mixing & Mastering</h3>
-                    <p class="paragraph">Our motto is “your song isn’t complete until it can compete.” In this competitive industry, a
-                        high-quality mix and master is what separates a professional artist from the rest. Our
-                        experienced mix engineers will work with you to get the song sounding ready for release.</p>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-    <!-- Contact Form -->
-
-    <div class="ebook-section">
-        <div class="ebook-container container">
-
-            <form [formGroup]="formGroup" class="contact-form">
-                <h1 class="ebook-title">YOUR MUSIC DESERVES AN AUDIENCE - WE CAN HELP YOU GET THERE.</h1>
-                <p class="paragraph ebook-text">We believe that in this digital age of music, your recording studio should be more
-                    than just a recording studio. Our engineers can give you
-                    the tools to succeed in social media, marketing, playlist placements, and more. Learn more in our
-                    FREE Artists Guide — immediately available when you enter your name and email below.
-                </p>
-                <label for="name" class="input-text">Name*</label>
-                <input 
-                type="text" 
-                name="name" 
-                class="input-field" 
-                aria-label="enter name"
-                [(ngModel)]="form.name"
-                >
-                
-                <!-- name validation -->
-
-                <small 
-                *ngIf="formGroup.get('name').invalid && 
-                formGroup.get('name').touched" 
-                >Please enter name</small>
-
-                <label for="email" class="input-text">Email*</label>
-                <input 
-                type="email" 
-                name="email" 
-                class="input-field" 
-                aria-label="enter email"
-                [(ngModel)]="form.email"
-                >
-
-                <!-- email validation -->
-
-                <small 
-                *ngIf="formGroup.get('email').invalid 
-                && formGroup.get('email').touched">
-                Please enter a valid email address (ex: abc@abc.com)</small>
-                
-                <div class="btn-container">
-                    <button 
-                    type="submit" 
-                    class="submit-button" 
-                    aria-label="submit form"
-                    (click)="saveForm()"
-                    routerLink="/thank-you" 
-                    href="/thank-you" 
-                    [disabled]="formGroup.invalid"
-                    >Submit</button>
-
-                </div>
-
-            </form>
-
-
-        </div>
-
-
+  <section class="services-hero">
+    <div class="hero">
+      <div class="header-container">
+        <h1 class="services-header">Services</h1>
+      </div>
     </div>
+  </section>
+
+  <section class="services container">
+    <h2 class="services-title">Your Success is our #1 Priority</h2>
+    <p class="paragraph services-text">
+      At OG Creations in Toronto, we offer a variety of recording studio
+      services for new and experienced artists. Our team is knowledgeable and
+      experienced in producing music, allowing us to help turn your vision into
+      reality and create music that defines you. From recording to mixing and
+      mastering to promoting your music, we can help you get started in the
+      music industry. Learn more about our recording studio services and contact
+      us to get started!
+    </p>
+
+    <button routerLink="/contact" href="/contact" class="cta-3">
+      Get in Touch
+    </button>
+
+    <div class="line">
+      <p>&nbsp;</p>
+    </div>
+    <div class="services-details">
+      <div class="recording-details">
+        <h3 class="service-title recording-title">Recording</h3>
+        <p class="paragraph">
+          Our studio is well equipped with high-quality microphones, gear,
+          software, and other equipment to make our recording services the best
+          possible. We work with artists of all styles and genres, new artists
+          and experienced artists, help you record the music you want to put out
+          into the world. When you record at OG Creations, you can expect:
+        </p>
+        <ul class="paragraph">
+          <li>High-quality vocal and instrumental recording</li>
+          <li>Demo mix of all recorded songs at the end of each session</li>
+          <li>Coaching and guidance by experienced professionals</li>
+        </ul>
+      </div>
+      <div class="mixing-details">
+        <h3 class="service-title recording-title">Mixing & Mastering</h3>
+        <p class="paragraph">
+          Our mixing and mastering engineers can help create the sound you are
+          looking for, getting your song to the level you want. Our professional
+          mixing and mastering services ensure that your music sounds even
+          better than you imagined it. This process includes unlimited revisions
+          to ensure that you are happy with the final product. We also know how
+          to work with different genres and that your music needs to have its
+          own unique sound, which is why we take a genre-appropriate approach
+          when creating the perfect sound.
+        </p>
+      </div>
+    </div>
+
+    <div class="service-cards container">
+      <div class="service-cards-container grid grid--3--cols">
+        <div class="card music-production">
+          <img
+            class="card-img"
+            src="/assets/img/services-img/music-production.webp"
+            alt=""
+          />
+          <h3 class="card-title">Music production</h3>
+          <p class="paragraph">
+            Our Toronto-based producers provide us with a huge library of
+            instrumentals to choose from. Can’t find any that you like? Does
+            your music demand totally unique production? No problem, we can make
+            the music from scratch to fit your vocals perfectly.
+          </p>
+        </div>
+        <div class="card recording">
+          <img
+            class="card-img"
+            src="/assets/img/services-img/recording.webp"
+            alt=""
+          />
+          <h3 class="card-title">Recording</h3>
+          <p class="paragraph">
+            Record your song in a state-of-the-art studio, with highly-trained
+            audio engineers guiding you along the way. Our recording sessions
+            are focused, collaborative, and fun to make sure that you get the
+            most out of your studio experience.
+          </p>
+        </div>
+        <div class="card mixing">
+          <img
+            class="card-img"
+            src="/assets/img/services-img/mixing.webp"
+            alt=""
+          />
+          <h3 class="card-title">Mixing & Mastering</h3>
+          <p class="paragraph">
+            Our motto is “your song isn’t complete until it can compete.” In
+            this competitive industry, a high-quality mix and master is what
+            separates a professional artist from the rest. Our experienced mix
+            engineers will work with you to get the song sounding ready for
+            release.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Form -->
+
+  <div class="ebook-section">
+    <div class="ebook-container container">
+      <form [formGroup]="formGroup" class="contact-form">
+        <h1 class="ebook-title">
+          YOUR MUSIC DESERVES AN AUDIENCE - WE CAN HELP YOU GET THERE.
+        </h1>
+        <p class="paragraph ebook-text">
+          We believe that in this digital age of music, your recording studio
+          should be more than just a recording studio. Our engineers can give
+          you the tools to succeed in social media, marketing, playlist
+          placements, and more. Learn more in our FREE Artists Guide —
+          immediately available when you enter your name and email below.
+        </p>
+        <label for="name" class="input-text">Name*</label>
+        <input
+          type="text"
+          name="name"
+          class="input-field"
+          aria-label="enter name"
+        />
+
+        <!-- name validation -->
+
+        <small
+          *ngIf="formGroup.get('name').invalid && formGroup.get('name').touched"
+          >Please enter name</small
+        >
+
+        <label for="email" class="input-text">Email*</label>
+        <input
+          type="email"
+          name="email"
+          class="input-field"
+          aria-label="enter email"
+        />
+
+        <!-- email validation -->
+
+        <small
+          *ngIf="
+            formGroup.get('email').invalid && formGroup.get('email').touched
+          "
+        >
+          Please enter a valid email address (ex: abc@abc.com)</small
+        >
+
+        <div class="btn-container">
+          <button
+            type="submit"
+            class="submit-button"
+            aria-label="submit form"
+            routerLink="/thank-you"
+            href="/thank-you"
+            [disabled]="formGroup.invalid"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
 </body>

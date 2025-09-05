@@ -1,288 +1,385 @@
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#333">
-    <meta name="description"
-        content="OG Creations © is a recording studio and music production hub for artists in the Greater Toronto area. We work with musicians across Ontario, providing high-quality audio recording, mixing and mastering, custom production, as well as hands-on learning experiences to help our clients reach their full potential.">
-    <link rel="apple-touch-icon" href="/assets/img/Logo.webp">
-    <title>OG Creations - Recording Studio</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#333" />
+  <meta
+    name="description"
+    content="OG Creations © is a recording studio and music production hub for artists in the Greater Toronto area. We work with musicians across Ontario, providing high-quality audio recording, mixing and mastering, custom production, as well as hands-on learning experiences to help our clients reach their full potential."
+  />
+  <link rel="apple-touch-icon" href="/assets/img/Logo.webp" />
+  <title>OG Creations - Recording Studio</title>
 </head>
 
-
 <body>
-
-
-    <!-- HERO SECTION -->
-    <div class="hero-section">
-        <div class="video-container">
-            <video autoplay="autoplay" [muted]="true" preload="auto" class="hero-video"
-                src="/assets/OG Creations Recording Studio.mp4"
-                 playsinline loop>
-            </video>
-        </div>
-        <a href="/contact" routerLink="/contact"><button class="cta-hero">Get Started</button></a>
+  <!-- HERO SECTION -->
+  <div class="hero-section">
+    <div class="video-container">
+      <video
+        autoplay="autoplay"
+        [muted]="true"
+        preload="auto"
+        class="hero-video"
+        src="/assets/OG Creations Recording Studio.mp4"
+        playsinline
+        loop
+      ></video>
     </div>
+    <a href="/contact" routerLink="/contact"
+      ><button class="cta-hero">Get Started</button></a
+    >
+  </div>
 
-    <!-- --------------->
-    <!-- INTRODUCTION -->
-    <!-- --------------->
+  <!-- --------------->
+  <!-- INTRODUCTION -->
+  <!-- --------------->
 
-    <div class="container">
-        <div class="intro-container">
-            <div class="slant">
-            </div>
-            <h1 class="header-welcome">Welcome To Our Studio</h1>
-            <div class="intro-description paragraph">
-                <p>OG Creations &reg; is a recording studio and music production hub for artists in the Greater Toronto
-                    area. We
-                    work with
-                    musicians across Ontario, providing high-quality audio recording, mixing and mastering, custom
-                    production, as well as hands-on learning
-                    experiences to help our clients reach their full potential.</p>
-            </div>
-            <button href="/contact" routerLink="/contact" class="cta-2">Let Us Help</button>
-        </div>
+  <div class="container">
+    <div class="intro-container">
+      <div class="slant"></div>
+      <h1 class="header-welcome">Welcome To Our Studio</h1>
+      <div class="intro-description paragraph">
+        <p>
+          OG Creations &reg; is a recording studio and music production hub for
+          artists in the Greater Toronto area. We work with musicians across
+          Ontario, providing high-quality audio recording, mixing and mastering,
+          custom production, as well as hands-on learning experiences to help
+          our clients reach their full potential.
+        </p>
+      </div>
+      <button href="/contact" routerLink="/contact" class="cta-2">
+        Let Us Help
+      </button>
     </div>
+  </div>
 
-    <!-- ----------------- -->
-    <!-- RECORDING SECTION -->
-    <!-- ----------------- -->
+  <!-- ----------------- -->
+  <!-- RECORDING SECTION -->
+  <!-- ----------------- -->
 
-    <section class="recording-section container-2">
+  <section class="recording-section container-2">
+    <div
+      class="recording grid grid--2--cols"
+      id="recording-section"
+      #recordingSection
+    >
+      <div class="recording-description" id="recording-text">
+        <h1 class="recording-title">RECORDING</h1>
+        <p class="paragraph recording-text">
+          Our engineers specialize in working with all styles and genres.
+          Whether you are new to recording or an experienced artist, we offer
+          the recording services to perfect your music:
+        </p>
 
-        <div class="recording grid grid--2--cols" id="recording-section" #recordingSection>
+        <div class="recording-list">
+          <div class="recording-list-item">
+            <div clss="icon-wrapper">
+              <svg
+                title="microphone icon"
+                xmlns="http://www.w3.org/2000/svg"
+                class="recording-icon mic-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
+                />
+              </svg>
+            </div>
 
+            <p class="paragraph item-description">
+              High-quality vocal and instrumental recording
+            </p>
+          </div>
+          <div class="recording-list-item">
+            <div class="icon-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="recording-icon mix-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                />
+              </svg>
+            </div>
 
+            <p class="paragraph item-description">
+              Demo mix of all recorded songs at the end of each session
+            </p>
+          </div>
+          <div class="recording-list-item">
+            <div class="icon-wrapper">
+              <svg
+                title="hand icon"
+                xmlns="http://www.w3.org/2000/svg"
+                class="recording-icon coach-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11"
+                />
+              </svg>
+            </div>
 
-            <div class="recording-description" id="recording-text" >
-                <h1 class="recording-title">RECORDING</h1>
-                <p class="paragraph recording-text">
-                    Our engineers specialize in working with all styles and genres.
-                    Whether you are new to recording or an
-                    experienced artist,
-                    we offer the recording services to perfect your music:
-                </p>
-
-                <div class="recording-list">
-                    <div class="recording-list-item">
-                        <div clss="icon-wrapper">
-                            <svg title="microphone icon" xmlns="http://www.w3.org/2000/svg"
-                                class="recording-icon mic-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
-                            </svg>
-                        </div>
-
-                        <p class="paragraph item-description">High-quality vocal and instrumental recording</p>
-
-                    </div>
-                    <div class="recording-list-item">
-                        <div class="icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor" class="recording-icon mix-icon">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                            </svg>
-
-                        </div>
-
-                        <p class="paragraph item-description">Demo mix of all recorded songs at the end of each session
-                        </p>
-                    </div>
-                    <div class="recording-list-item">
-                        <div class="icon-wrapper">
-                            <svg title="hand icon" xmlns="http://www.w3.org/2000/svg" class="recording-icon coach-icon"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11" />
-                            </svg>
-
-                        </div>
-
-                        <p class="paragraph item-description">Coaching and guidance by experienced professionals</p>
-                    </div>
-
-                </div>
-                <!-- <div class="cta-3-wrapper">
+            <p class="paragraph item-description">
+              Coaching and guidance by experienced professionals
+            </p>
+          </div>
+        </div>
+        <!-- <div class="cta-3-wrapper">
 
                 </div> -->
-                <button href="/recording" routerLink="/recording" class="cta-3">Learn More</button>
-            </div>
-            <div class="recording-img" id="recording-img">
-                <img src="/assets/img/SIDE_IMAGE_Microphone.webp" alt="close up mixer board and OG logo image">
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ---------------->
-    <!-- SECTIONS GRID -->
-    <!-- ---------------->
-
-    <div class="sections-grid grid grid--2--cols">
-
-        <div class="studio-section">
-            <p class="section-title studio-title">The Studio</p>
-            <a routerLink="/studio" href="/studio"><img class="section-img studio-img" width="1000" height="630"
-                    src="/assets/img/THE STUDIO_compressed.webp" alt="grid studio image"></a>
-        </div>
-        <div class="services-section">
-            <p class="section-title services-title">Services</p>
-            <a routerLink="/services" href="/services"><img class="section-img services-img" width="1000" height="630"
-                    src="/assets/img/SERVICES_compressed.webp" alt="grid services image"></a>
-        </div>
-        <div class="about-section">
-            <p class="section-title about-title">About Us</p>
-            <a routerLink="/about" href="/about"><img class="section-img about-img" width="1000" height="630"
-                    src="/assets/img/ABOUT US_compressed.webp" alt="grid about image"></a>
-        </div>
-        <div class="artist-gallery-section">
-            <p class="section-title gallery-title">OG Blog</p>
-            <a routerLink="/blog" href="/blog"><img class="section-img gallery-img" width="1000" height="630"
-                    src="/assets/img/BLOG_compressed.webp" alt="grid blog"></a>
-        </div>
+        <button href="/recording" routerLink="/recording" class="cta-3">
+          Learn More
+        </button>
+      </div>
+      <div class="recording-img" id="recording-img">
+        <img
+          src="/assets/img/SIDE_IMAGE_Microphone.webp"
+          alt="close up mixer board and OG logo image"
+        />
+      </div>
     </div>
+  </section>
 
+  <!-- ---------------->
+  <!-- SECTIONS GRID -->
+  <!-- ---------------->
 
-    <!-- ---------------->
-    <!-- MIXING SECTION-->
-    <!-- ---------------->
-
-    <div class="recording-section container-2">
-
-        <div class="recording grid grid--2--cols" id="mixing-section" #mixingSection>
-
-            <div class="recording-img" id="mixing-img">
-                <img src="/assets/img/SIDE_IMAGE_compressed.webp" alt="close up mixer board and OG logo image">
-            </div>
-
-            <div class="recording-description" id="mixing-description">
-                <h1 class="recording-title" id="mix-title">MIXING <span style="font-family:Montserrat;">&</span>
-                    MASTERING</h1>
-                <p class="paragraph recording-text">
-                    Our engineers are
-                    ready to give your song the professional treatment it deserves. Our mixing and mastering process
-                    includes:
-                </p>
-
-                <div class="recording-list">
-                    <div class="recording-list-item" id="mix-item">
-                        <div class="icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" id="mix-icon" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor" class="recording-icon revision-icon">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                            </svg>
-
-                        </div>
-
-                        <p class="paragraph item-description">Unlimited revisions - we will make sure you are happy
-                            with the final mix before it is mastered</p>
-
-                    </div>
-                    <div class="recording-list-item" id="mix-item">
-                        <div class="icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" id="mix-icon" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor" class="recording-icon genre-icon">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
-                            </svg>
-
-                        </div>
-
-                        <p class="paragraph item-description">Genre-appropriate mixing approach - we know there is
-                            no one size fits all when it comes to your music</p>
-                    </div>
-
-                </div>
-                <button href="/mixing" routerLink="/mixing" class="cta-3" id="mix-learn-more">Learn More</button>
-            </div>
-
-        </div>
-
+  <div class="sections-grid grid grid--2--cols">
+    <div class="studio-section">
+      <p class="section-title studio-title">The Studio</p>
+      <a routerLink="/studio" href="/studio"
+        ><img
+          class="section-img studio-img"
+          width="1000"
+          height="630"
+          src="/assets/img/THE STUDIO_compressed.webp"
+          alt="grid studio image"
+      /></a>
     </div>
+    <div class="services-section">
+      <p class="section-title services-title">Services</p>
+      <a routerLink="/services" href="/services"
+        ><img
+          class="section-img services-img"
+          width="1000"
+          height="630"
+          src="/assets/img/SERVICES_compressed.webp"
+          alt="grid services image"
+      /></a>
+    </div>
+    <div class="about-section">
+      <p class="section-title about-title">About Us</p>
+      <a routerLink="/about" href="/about"
+        ><img
+          class="section-img about-img"
+          width="1000"
+          height="630"
+          src="/assets/img/ABOUT US_compressed.webp"
+          alt="grid about image"
+      /></a>
+    </div>
+    <div class="artist-gallery-section">
+      <p class="section-title gallery-title">OG Blog</p>
+      <a routerLink="/blog" href="/blog"
+        ><img
+          class="section-img gallery-img"
+          width="1000"
+          height="630"
+          src="/assets/img/BLOG_compressed.webp"
+          alt="grid blog"
+      /></a>
+    </div>
+  </div>
 
-    <!-- ---------------->
-    <!-- READY SECTION-->
-    <!-- ---------------->
-    <div class="ready-section">
-        <div class="ready-background">
-            <!-- <img src="/assets/img/lowerimage_.png" alt=""> -->
-        </div>
+  <!-- ---------------->
+  <!-- MIXING SECTION-->
+  <!-- ---------------->
 
-        <div class="ready-text grid">
-            <h1 class="ready-title">Are You Ready?</h1>
-            <p class="ready-description">Once you are ready to take the next step toward your dreams of becoming an
-                artist, be sure to contact OG
-                Creations in Toronto today!
-                <br>
-                Our team has the knowledge, skills, and experience to help you get your music out into the world.
+  <div class="recording-section container-2">
+    <div
+      class="recording grid grid--2--cols"
+      id="mixing-section"
+      #mixingSection
+    >
+      <div class="recording-img" id="mixing-img">
+        <img
+          src="/assets/img/SIDE_IMAGE_compressed.webp"
+          alt="close up mixer board and OG logo image"
+        />
+      </div>
+
+      <div class="recording-description" id="mixing-description">
+        <h1 class="recording-title" id="mix-title">
+          MIXING <span style="font-family: Montserrat">&</span> MASTERING
+        </h1>
+        <p class="paragraph recording-text">
+          Our engineers are ready to give your song the professional treatment
+          it deserves. Our mixing and mastering process includes:
+        </p>
+
+        <div class="recording-list">
+          <div class="recording-list-item" id="mix-item">
+            <div class="icon-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="mix-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="recording-icon revision-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                />
+              </svg>
+            </div>
+
+            <p class="paragraph item-description">
+              Unlimited revisions - we will make sure you are happy with the
+              final mix before it is mastered
             </p>
-            <button href="/contact" routerLink="/contact" class="cta-4">Let's Get Started</button>
-
-        </div>
-
-
-    </div>
-
-    <!-- Contact Form -->
-
-    <div class="ebook-section">
-        <div class="ebook-container" #ebookSection>
-            <div class="slant-2">
-                &nbsp;
+          </div>
+          <div class="recording-list-item" id="mix-item">
+            <div class="icon-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="mix-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="recording-icon genre-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"
+                />
+              </svg>
             </div>
 
-            <form #userForm="ngForm" [formGroup]="formGroup" class="contact-form">
-                <h1 class="ebook-title">FREE EBOOK - GET YOURS TODAY</h1>
-                <p class="ebook-text">Enter your email for immediate access to our OG Creations Artist Resources eBook
-                </p>
-                <label for="name" class="input-text">Name*</label>
-                <input 
-                type="text" 
-                class="input-field"
-                 aria-label="enter name" 
-                 #name [(ngModel)]="form.name"
-                name="name"
-                required
-                >
-                <!-- name validation -->
-
-                <small *ngIf="formGroup.get('name').invalid && 
-                formGroup.get('name').touched">Please enter name</small>
-
-
-                <label for="email" class="input-text">Email*</label>
-                <input type="email" class="input-field" aria-label="enter email" #email name="email"
-                    [(ngModel)]="form.email" required>
-                <!-- email validation -->
-
-                <small *ngIf="formGroup.get('email').invalid 
-                                && formGroup.get('email').touched">
-                    Please enter a valid email address (ex: abc@abc.com)</small>
-
-
-
-                <div class="btn-container">
-                    <button 
-                    routerLink="/thank-you" 
-                    href="/thank-you" 
-                    class="submit-button" 
-                    aria-label="submit form"
-                    (click)="saveForm()" 
-                    type="submit"
-                    [disabled]="formGroup.invalid"
-                    >Submit</button>
-
-                </div>
-
-            </form>
-
+            <p class="paragraph item-description">
+              Genre-appropriate mixing approach - we know there is no one size
+              fits all when it comes to your music
+            </p>
+          </div>
         </div>
+        <button
+          href="/mixing"
+          routerLink="/mixing"
+          class="cta-3"
+          id="mix-learn-more"
+        >
+          Learn More
+        </button>
+      </div>
+    </div>
+  </div>
 
-
+  <!-- ---------------->
+  <!-- READY SECTION-->
+  <!-- ---------------->
+  <div class="ready-section">
+    <div class="ready-background">
+      <!-- <img src="/assets/img/lowerimage_.png" alt=""> -->
     </div>
 
+    <div class="ready-text grid">
+      <h1 class="ready-title">Are You Ready?</h1>
+      <p class="ready-description">
+        Once you are ready to take the next step toward your dreams of becoming
+        an artist, be sure to contact OG Creations in Toronto today!
+        <br />
+        Our team has the knowledge, skills, and experience to help you get your
+        music out into the world.
+      </p>
+      <button href="/contact" routerLink="/contact" class="cta-4">
+        Let's Get Started
+      </button>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+
+  <div class="ebook-section">
+    <div class="ebook-container" #ebookSection>
+      <div class="slant-2">&nbsp;</div>
+
+      <form #userForm="ngForm" [formGroup]="formGroup" class="contact-form">
+        <h1 class="ebook-title">FREE EBOOK - GET YOURS TODAY</h1>
+        <p class="ebook-text">
+          Enter your email for immediate access to our OG Creations Artist
+          Resources eBook
+        </p>
+        <label for="name" class="input-text">Name*</label>
+        <input
+          type="text"
+          class="input-field"
+          aria-label="enter name"
+          #name
+          name="name"
+          required
+        />
+        <!-- name validation -->
+
+        <small
+          *ngIf="formGroup.get('name').invalid && formGroup.get('name').touched"
+          >Please enter name</small
+        >
+
+        <label for="email" class="input-text">Email*</label>
+        <input
+          type="email"
+          class="input-field"
+          aria-label="enter email"
+          #email
+          name="email"
+          required
+        />
+        <!-- email validation -->
+
+        <small
+          *ngIf="
+            formGroup.get('email').invalid && formGroup.get('email').touched
+          "
+        >
+          Please enter a valid email address (ex: abc@abc.com)</small
+        >
+
+        <div class="btn-container">
+          <button
+            routerLink="/thank-you"
+            href="/thank-you"
+            class="submit-button"
+            aria-label="submit form"
+            type="submit"
+            [disabled]="formGroup.invalid"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
